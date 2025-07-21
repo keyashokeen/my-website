@@ -12,8 +12,9 @@ import clawImage from './claw.jpg';
 import gomoku from './gomoku.jpg';
 import autocompleteImage from './autocomplete.jpg';
 import roboglove from './roboglove.png';
+
 import circsim from './circsim.png';
-import ergo from 'ergo.png';
+import ergo from './ergo.png';
 
 // Sample project data - replace with your actual projects
 const projectsData = [
