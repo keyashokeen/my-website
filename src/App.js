@@ -9,8 +9,11 @@ import pcbImage from './pcb.jpg';
 import handImage from './hand.jpg';
 import pacmanImage from './pacman.jpg';
 import clawImage from './claw.jpg';
-import gomokuImage from './gomoku.jpg';
+import gomoku from './gomoku.jpg';
 import autocompleteImage from './autocomplete.jpg';
+import roboglove from './roboglove.png';
+import circsim from './circsim.png';
+import ergo from 'ergo.png';
 
 // Sample project data - replace with your actual projects
 const projectsData = [
