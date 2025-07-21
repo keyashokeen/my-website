@@ -16,45 +16,66 @@ import autocompleteImage from './autocomplete.jpg';
 const projectsData = [
   {
     id: 1,
-    name: "Radio Transceiver: Power Amplifier and Low Pass Filter",
+    name: "Radio Transceiver: Class D Amplifier and Low-Pass Filter Design",
     image: pcbImage,
     skills: ["RF Circuit Design", "PCB Layout (Altium)", "Soldering"],
-    description: "Designed and tested a power amplifier and low-pass filter subsystem for a radio transmitter, achieving clean signal transmission and harmonic suppression with PCB design, simulation, and hardware integration."
+    description: "Designed and simulated a multi-stage Class D RF amplifier and Butterworth low-pass filter using LTspice; validated output using oscilloscope measurements and Python-based FFT analysis, achieving target waveform fidelity with a low distortion of 0.58%. Debugged signal distortion, gate timing errors, and PCB-level faults through staged troubleshooting and frequency-domain analysis, improving amplifier efficiency and ensuring compliance with project performance benchmarks."
   },
   {
     id: 2,
     name: "Piano Posture Wristband",
     image: handImage,
     skills: ["Microcontroller Programming (Arduino)", "Sensor Integration (ToF, IMU)", "Embedded Systems Prototyping"],
-    description: "Developed a piano posture wristband for children using an ultrasonic distance sensor and Arduino to provide real-time feedback on wrist form and prevent injury."
+    description: "Designed and developed a piano posture assistant for 88Keys children’s music school, integrating real-time feedback and gamification features that improved student posture awareness and increased engagement during practice. Engineered hardware using ultrasonic and ToF sensors with Arduino-based motion tracking, exploring gyroscope integration to assess accuracy potential, which informed optimized sensor selection for reliable posture tracking."
   },
   {
     id: 3,
     name: "FPGA (RISC-V Softcore Processor) Pacman Game",
     image: pacmanImage,
     skills: ["Verilog", "PS/2 Interfacing", "VGA Controller Design"],
-    description: "Designed and implemented a simplified Pacman game on an FPGA using a finite state machine, VGA display logic, and PS/2 keyboard input, featuring collision detection and visual debugging via onboard displays."
+    description: "Coded a Pacman game on FPGA using Verilog, leveraging finite state machines for game control, optimized VGA rendering for smooth visuals, and integrated PS/2 keyboard input for responsive player movement, resulting in a fully functional arcade experience. Designed efficient memory mapping to track positions and detect collisions, using real-time debugging with LEDs and HEX displays to verify system correctness."
   },
   {
     id: 4,
     name: "FPGA (RISC-V Softcore Processor) Claw Machine Game",
     image: clawImage,
     skills: ["C++", "Assembly", "Interrupts & Polling"],
-    description: "Developed an interactive claw machine simulation with real-time object movement and game logic using PS/2 keyboard polling, timer interrupts, and VGA rendering for claw and ball coordination."
+    description: "Built a graphics-based claw machine arcade game using C and RISC-V assembly on an FPGA, implementing memory-mapped I/O, PS/2 polling, timer interrupts, and FSM gameplay logic to deliver a real-time embedded game system. Programmed bare-metal firmware to manage synchronization and peripheral control, enabling smooth user interaction and reliable timing within resource-constrained hardware."
   },
   {
     id: 5,
-    name: "AI Game for Gomoku",
-    image: gomokuImage,
-    skills: ["Python", "Minimax Algorithm", "Array-Based Optimization (NumPy)"],
-    description: "Developed an AI-powered Gomoku game with optimized NumPy-based board representation and a heuristic function for intelligent move evaluation."
-  },
-  {
-    id: 6,
     name: "Autocomplete Software Development",
     image: autocompleteImage,
     skills: ["C", "Binary Search Optimization", "Lexicographic Sorting"],
-    description: "Implemented an efficient autocomplete system that provides real-time text suggestions using binary search on a lexicographically sorted dataset."
+    description: "Coded autocomplete functionality in C to provide instant text suggestions from a large dataset, enabling low-latency user input and seamless typing experience. Implemented an optimized binary search on lexicographically sorted terms, reducing query lookup time and efficiently handling datasets exceeding 100,000 entries."
+  },
+  {
+    id: 6,
+    name: "Robotic American Sign Language (ASL) Glove",
+    image: roboglove,
+    skills: ["C"],
+    description: "Building a wearable glove using flex sensors and an IMU, capturing hand gestures to recognize static ASL letters, and displaying real-time text output on a connected screen to support accessible communication."
+  },
+  {
+    id: 7,
+    name: "Circuit Simulator",
+    image: circsim,
+    skills: ["C++"],
+    description: "Programmed a C++ program to parse circuit commands, dynamically manage resistor networks, and accurately calculate node voltages, enabling the development of a simulation tool for complex circuits. Applied object-oriented programming, error handling with C++ streams, and dynamic memory allocation to ensure program reliability and scalability."
+  },
+  {
+    id: 8,
+    name: "Ergonomics Monitor",
+    image: ergo,
+    skills: ["Sensor Integration", "Arduino IDE"],
+    description: "Built a screen proximity alert system that promptly warns users when dangerously close to their screens, promoting healthier viewing habits and reducing eye strain risks. Designed and implemented a neck posture monitoring algorithm to detect prolonged neck bending, enabling timely user reminders to prevent strain and improve ergonomics. Developed a light sensing system to detect low ambient light conditions and device usage, enabling context-aware alerts that prompt users to adjust lighting or take breaks."
+  },
+  {
+    id: 9,
+    name: "AI for the Game of Gomoku",
+    image: gomoku,
+    skills: ["Python"],
+    description: "Programmed an AI engine for an 8x8 Gomoku game featuring turn-based play and accurate win condition detection, enabling competitive gameplay against human players. Implemented a heuristic evaluation function and optimized board representation with NumPy, significantly improving move calculation speed and enabling real-time decision-making."
   }
 ];
 /*
@@ -498,13 +519,13 @@ function App() {
         </div>
       </section>
 
-          {/* Footer */}
-          <footer className="footer">
-            <div className="container">
-              <p>© {new Date().getFullYear()} Built by Keya in React</p>
-            </div>
-          </footer>
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container">
+          <p>© {new Date().getFullYear()} Built by Keya in React</p>
         </div>
+      </footer>
+    </div>
   );
 }
 
