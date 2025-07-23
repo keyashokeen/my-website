@@ -5,7 +5,7 @@ import './App.css';
 import myPic from './me.JPG'; // Make sure this path is correct
 import myPic2 from './me_2.JPG';
 
-import pcbImage from './pcb.jpg';
+import pcbImage from './pcb.png';
 import handImage from './hand.jpg';
 import pacmanImage from './pacman.jpg';
 import clawImage from './claw.jpg';
@@ -29,7 +29,7 @@ const projectsData = [
     id: 2,
     name: "Piano Posture Wristband",
     image: handImage,
-    skills: ["Microcontroller Programming (Arduino)", "Sensor Integration (ToF, IMU)", "Embedded Systems Prototyping"],
+    skills: ["Microcontroller Programming (Arduino)", "Sensor Integration (ToF, IMU)", "Embedded Systems"],
     description: "Designed and developed a piano posture assistant for 88Keys children’s music school, integrating real-time feedback and gamification features that improved student posture awareness and increased engagement during practice. Engineered hardware using ultrasonic and ToF sensors with Arduino-based motion tracking, exploring gyroscope integration to assess accuracy potential, which informed optimized sensor selection for reliable posture tracking."
   },
   {
