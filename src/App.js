@@ -298,18 +298,11 @@ function App() {
               <img src={myPic2} alt="Keya Shokeen" className="profile-pic" />
             </div>
             <div className="about-text">
-              <h3>Specializing in:</h3>
-              <ul>
-                <li>Photonics and Semiconductor Physics</li>
-                <li>Control, Communication, and Digital Signal Processing</li>
-                <li>Computer Hardware and Networks</li>
-                <li>Minor in Robotics and Mechatronics</li>
-              </ul>
               <p>
                 I'm passionate about leveraging my engineering background to solve
                 complex problems at the intersection of hardware and software.
                 Currently, I'm focusing on research in photonics while developing
-                practical applications in signal processing and control systems.
+                practical applications in AI, software, signal processing and control systems.
               </p>
             </div>
           </div>
